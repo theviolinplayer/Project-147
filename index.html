@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>3D Room Layout</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Room Floor -->
+      <a-plane
+        position="0 0 -5"
+        rotation="-90 0 0"
+        width="8"
+        height="6"
+        color="#8a7967"
+      ></a-plane>
+
+      <!-- Back Wall -->
+      <a-plane
+        position="0 2 -6"
+        width="8"
+        height="4"
+        color="#4d2b1f"
+      ></a-plane>
+
+      <!-- Left Chair -->
+      <a-cylinder
+        position="-1 0.5 -4"
+        radius="0.2"
+        height="1"
+        color="#a0a0a0"
+      ></a-cylinder>
+      <a-sphere
+        position="-1 1.2 -4"
+        radius="0.4"
+        color="#c0c0c0"
+      ></a-sphere>
+
+      <!-- Right Chair -->
+      <a-cylinder
+        position="1 0.5 -4"
+        radius="0.2"
+        height="1"
+        color="#a0a0a0"
+      ></a-cylinder>
+      <a-sphere
+        position="1 1.2 -4"
+        radius="0.4"
+        color="#c0c0c0"
+      ></a-sphere>
+
+      <!-- Table -->
+      <a-box
+        position="0 0.5 -4"
+        width="2"
+        height="0.1"
+        depth="1"
+        color="#a8a8a8"
+      ></a-box>
+      <a-cylinder
+        position="0 0.25 -4"
+        radius="0.1"
+        height="0.5"
+        color="#bfbfbf"
+      ></a-cylinder>
+
+      <!-- Rug -->
+      <a-plane
+        position="0 0.01 -4"
+        rotation="-90 0 0"
+        width="3"
+        height="2"
+        src="https://cdn.aframe.io/a-painter/images/floor.jpg"
+      ></a-plane>
+
+      <!-- Wall Art -->
+      <a-plane
+        position="-2 2 -5.9"
+        width="1"
+        height="2"
+        src="https://cdn.aframe.io/a-painter/images/tree.png"
+      ></a-plane>
+      <a-plane
+        position="0 2 -5.9"
+        width="1"
+        height="2"
+        src="https://cdn.aframe.io/a-painter/images/tree.png"
+      ></a-plane>
+      <a-plane
+        position="2 2 -5.9"
+        width="1"
+        height="2"
+        src="https://cdn.aframe.io/a-painter/images/tree.png"
+      ></a-plane>
+
+      <!-- Light Fixture -->
+      <a-cone
+        position="0 3 -4"
+        radius-bottom="0.4"
+        radius-top="0.1"
+        height="0.5"
+        color="#ffcc99"
+        rotation="0 0 180"
+      ></a-cone>
+      <a-sphere position="0 2.8 -4" radius="0.1" color="#ffff66"></a-sphere>
+    </a-scene>
+  </body>
+</html>
